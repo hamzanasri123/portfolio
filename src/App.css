@@ -1,38 +1,306 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ececec;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url("https://mad-geneve.ch/wp-content/uploads/2021/01/xWeb-3.jpg.pagespeed.ic.ema04bz12W.jpg");
+}
+
+.nav {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background: #1f2235;
+  z-index: 1;
+  top: 0;
+}
+
+.toggle{
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+ text-align: center;
+  justify-content: center;
+  display: none;
+  background-color: #ff4a57;
+  font-size: 30px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  width: 120px;
+}
+
+.nav-right {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-right li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%;
+  margin: 0 !important;
+}
+
+.h-650 {
+  height: 650px;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.col-4 {
+  width: 33.33333333333333%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.header-ul {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.header-ul li {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ff4a57;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px 0 0;
+}
+
+.header-ul li:first-child {
+  margin-left: 0;
+}
+
+.header-section {
+}
+
+.header-section h1 {
+  font-size: 57px;
+  font-weight: 700;
+}
+
+.header-section p {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  color: #1f2235;
+  padding: 13px 40px;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 2px solid #ff4a57;
+  border-radius: 23px;
+}
+
+.banner-image {
+  padding: 0 30px;
+  margin-top: 150px;
+}
+
+/* services */
+.services {
+  background-color: #1f2235de;
+  padding: 100px 0;
+  color: #fff;
+  background-image: url("https://www.questinfosense.com/wp-content/uploads/react_native_app_development_updated.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.common {
+  width: 33.33333333333333%;
+  margin: 20px auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #ff4a57;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mainheader {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.mainContent {
+  font-size: 16px;
+  color: #dfdfdf;
+}
+
+.common-border {
+  background-color: #ff4a57;
+  height: 3px;
+  width: 120px;
+  margin: 20px auto;
+}
+
+.services-box {
+  padding: 40px;
+  background-color: #23263aad;
+  border-radius: 8px;
+  margin: 20px;
+  transition: all 0.5s linear;
+}
+
+.services-box:hover {
+  background: #ff4a57;
+}
+
+.services-box:hover .common-icons {
+  color: #fff;
+}
+
+.common-icons {
+  font-size: 40px;
+  color: #ff4a57;
+  margin-bottom: 15px;
+}
+
+.services-box-header {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-box-p {
+  font-size: 16px;
+  color: #dfdfdf;
+}
+
+.about {
+  width: 100%;
+
+  background-image: url("https://wallpaperaccess.com/full/1555147.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.about-img {
+  padding: 30px;
+}
+
+.about-img img {
+  width: 100px;
+  height: 200px;
+}
+
+.about-info {
+  color: #fff;
+}
+
+.about-info h1 {
+  margin-bottom: 30px;
+}
+
+.about-info-p1 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.about-info-p1 {
+  font-size: 14px;
+}
+
+.info-contact {
+  margin-top: 20px;
+}
+
+.info-contact strong {
+  color: #ff4a57;
+}
+
+.info-contact p {
+  margin-top: 3px;
+}
+
+.info-contact .col-6 {
+  margin: 10px 0;
+}
+
+@media (max-width: 765px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .col-6 {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+ .nav-right{
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   
+  
+ }
+ .nav-right li a{
+display: block;
+ }
+ .toggle{
+   display: block;
+ }
 }
